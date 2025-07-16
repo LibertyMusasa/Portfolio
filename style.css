@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  text-align: center;
+  position: relative;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.nav-btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid #000;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.nav-btn:hover {
+  background-color: #000;
+  color: #fff;
+  opacity: 1;
+}
+
+.portrait {
+  position: absolute;
+  top: -10px;
+  right: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.project {
+  margin-top: 15px;
+}
+
+.project h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
+
+/* ✅ FLEX SECTION: Now applies on all screen sizes */
+.flex-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 250px;
+  border: 2px solid #000;
+  padding: 20px;
+  text-align: left;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.info-box:hover {
+  border-color: #555;
+  background-color: #f9f9f9;
+  transform: scale(1.02);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ✅ MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+  .portrait {
+    position: static;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .nav-btn {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .flex-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
