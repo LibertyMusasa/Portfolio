@@ -95,6 +95,34 @@ h2 {
   font-size: 1.3rem;
   margin-bottom: 5px;
 }
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-container {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* grey shadow */
+  cursor: pointer;
+}
+
 
 footer {
   margin-top: 40px;
@@ -154,3 +182,35 @@ footer {
     align-items: center;
   }
 }
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  animation: blink-caret 0.75s step-end infinite;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} 
+
+p{
+  animation: fadeIn 2s ease forwards;
+}
+
+
+
+
